@@ -1,0 +1,3 @@
+class Queensizeb < ApplicationRecord
+	mount_uploader :image, ImageUploader
+end
