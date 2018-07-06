@@ -10,6 +10,7 @@ class WardrobesController < ApplicationController
   # GET /wardrobes/1
   # GET /wardrobes/1.json
   def show
+    @wardrobes = Wardrobe.all
   end
 
   # GET /wardrobes/new
@@ -69,6 +70,6 @@ class WardrobesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def wardrobe_params
-      params.require(:wardrobe).permit(:title, :description, :price, :image, :previewo, :previewt, :previewth, :sdescription, :offerprice, :coupon, :brand, :color, :warrenty, :material)
+      params.require(:wardrobe).permit(:title, :description, :price, :image, :previewo, :previewt, :previewth, :sdescription, :offerprice, :coupon, :brand, :color, :warrenty, :material, :saving, :off)
     end
 end

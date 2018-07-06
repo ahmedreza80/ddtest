@@ -10,6 +10,7 @@ class SofasController < ApplicationController
   # GET /sofas/1
   # GET /sofas/1.json
   def show
+    @sofas = Sofa.all
   end
 
   # GET /sofas/new
@@ -69,6 +70,6 @@ class SofasController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def sofa_params
-      params.require(:sofa).permit(:title, :description, :price, :image, :previewo, :previewt, :previewth, :sdescription, :offerprice, :coupon, :brand, :color, :warrenty, :material)
+      params.require(:sofa).permit(:title, :description, :price, :image, :previewo, :previewt, :previewth, :sdescription, :offerprice, :coupon, :brand, :color, :warrenty, :material, :saving, :off)
     end
 end

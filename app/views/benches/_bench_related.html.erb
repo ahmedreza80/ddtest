@@ -1,7 +1,7 @@
 <head>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<link rel="stylesheet" href="/assets/chairs.scss">
+<link rel="stylesheet" href="/assets/benches.scss">
 </head>
 
 <body>
@@ -19,12 +19,12 @@
         <div class="row">
 
 
-          <% @chairs.each do |chair| %>
+          <% @benches.each do |bench| %>
           <div class="col col-md-4 col-sm-6">
               <div class="product-grid">
                 <div class="image">
                   <a href="#">
-                    <img src= "<%= chair.image %>" alt="<%= chair.title %> 's image" class="img-fluid">
+                    <img src= "<%= bench.image %>" alt="<%= bench.title %> 's image" class="img-fluid">
                     <span class="overlay">
                         <span class="product-details">
                           View Details
@@ -33,10 +33,10 @@
                   </a>
                 </div>
                 <div class="product-discription py-3">
-                <h4 class="text-center"><%= chair.title %></h4>
-                <p class="text-center"><small><%= chair.sdescription %></small></p>
+                <h4 class="text-center"><%= bench.title %></h4>
+                <p class="text-center"><small><%= bench.sdescription %></small></p>
                 <span class="product-price">
-                <p class="text-center d-inline">Price: <%= chair.price %></p><i class="fa fa-heart d-inline" aria-hidden="true"></i>
+                <p class="text-center d-inline">Price: <%= bench.price %></p><i class="fa fa-heart d-inline" aria-hidden="true"></i>
                 </span>
                 </div>
                 <div class="product-btn py-2 text-center">

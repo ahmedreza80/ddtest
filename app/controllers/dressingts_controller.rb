@@ -69,6 +69,6 @@ class DressingtsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def dressingt_params
-      params.require(:dressingt).permit(:title, :description, :price, :image, :previewo, :previewt, :previewth, :sdescription, :offerprice, :coupon, :brand, :color, :warrenty, :material)
+      params.require(:dressingt).permit(:title, :description, :price, :image, :previewo, :previewt, :previewth, :sdescription, :offerprice, :coupon, :brand, :color, :warrenty, :material, :saving, :off)
     end
 end

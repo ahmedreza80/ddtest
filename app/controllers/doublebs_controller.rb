@@ -10,6 +10,7 @@ class DoublebsController < ApplicationController
   # GET /doublebs/1
   # GET /doublebs/1.json
   def show
+    @doublebs = Doubleb.all
   end
 
   # GET /doublebs/new
@@ -69,6 +70,6 @@ class DoublebsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def doubleb_params
-      params.require(:doubleb).permit(:title, :description, :price, :image, :previewo, :previewt, :previewth, :sdescription, :offerprice, :coupon, :brand, :color, :warrenty, :material)
+      params.require(:doubleb).permit(:title, :description, :price, :image, :previewo, :previewt, :previewth, :sdescription, :offerprice, :coupon, :brand, :color, :warrenty, :material, :saving, :off)
     end
 end

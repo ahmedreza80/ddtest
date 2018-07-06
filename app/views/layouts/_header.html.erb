@@ -1,14 +1,59 @@
 <head>
-  <link rel="stylesheet" href="/assets/style.scss">
+  <link rel="stylesheet" href="/assets/header.scss">
 </head>
 
 <body>
 
-  <!-- Header -->
-
   <header>
+
+    <div class="container-fluid">
+
+      <div class="row">
+      <div class="col col-md-4 d-sm-none d-md-block my-2">
+        <div class="header-nav">
+        <ul class="nav">
+    <li class="nav-item">
+      <a class="nav-link active" href="#">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">About</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Contact</a>
+    </li>
+  </ul>
+  </div>
+      </div>
+      <div class="col col-md-3 col-sm-6">
+          <div class="container">
+          <img src="/assets/logo.png" alt="logo" class="img-fluid logo">
+          </div>
+      </div>
+      <div class="col col-md-5 col-sm-6">
+        <div class="contact">
+        <div class="login d-inline">
+          <a href="#">SignIn / SignUp </a>
+        </div>
+        <form class="form-inline d-inline">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-info my-2 my-sm-0" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+      </form>
+      <div class="dropdown d-inline">
+  <button class="btn btn-warning dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Contact
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <i class="fa fa-whatsapp d-inline" aria-hidden="true"></i>
+    <span class="d-inline">9747 444 800 | <a href="#">info@dennyDots.com</a></span>
+  </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
     <!-- Container For Navbar -->
-<div class="container-fluid bg-dark mt-4">
+<div class="container-fluid bg-dark">
+
   <div class="container">
     <!--Navbar -->
       <nav class="navbar navbar-expand-lg navbar-light">
@@ -256,7 +301,7 @@
         <li class="nav-item">
 
           <a class="dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <span class="link-custom">Kids</span>
+                  <span class="link-custom">KIDS</span>
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                 <div class="container large-box  text-uppercase">
@@ -297,13 +342,8 @@
               </div>
         </li>
       </div>
-
-
-
       </nav>
   </div>
 </div>
 </header>
-
-
 </body>
