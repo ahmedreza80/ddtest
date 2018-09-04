@@ -10,6 +10,7 @@ class WritingtsController < ApplicationController
   # GET /writingts/1
   # GET /writingts/1.json
   def show
+    @writingts = Writingt.all
   end
 
   # GET /writingts/new
@@ -69,6 +70,6 @@ class WritingtsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def writingt_params
-      params.require(:writingt).permit(:title, :description, :price, :image, :previewo, :previewt, :previewth, :sdescription, :offerprice, :coupon, :brand, :color, :warrenty, :material, :saving, :off)
+      params.require(:writingt).permit(:title, :description, :price, :image, :previewo, :previewt, :previewth, :sdescription, :offerprice, :coupon, :brand, :color, :warrenty, :material, :saving, :off, :height, :width, :depth, :dimension)
     end
 end

@@ -16,7 +16,11 @@ class CreateSofas < ActiveRecord::Migration[5.1]
       t.string :warrenty
       t.string :material
       t.string :saving
-      t.string :off
+            t.string :off
+      t.string :height
+      t.string :width
+      t.string :depth
+      t.string :dimension
 
       t.timestamps
     end

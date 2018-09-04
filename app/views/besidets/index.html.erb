@@ -1,7 +1,7 @@
 <head>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<link rel="stylesheet" href="/assets/bsidets.scss">
+<link rel="stylesheet" href="/assets/besidets.scss">
 </head>
 
 <body>
@@ -55,32 +55,32 @@
 
     <div class="container-fluid bg-cover">
       <div class="container product-section-cover">
-        
+
         <div class="row">
 
 
-          <% @bsidets.each do |bsidet| %>
+          <% @besidets.each do |besidet| %>
           <div class="col col-md-4 col-sm-6">
               <div class="product-grid">
                 <div class="image">
-                  <a href="#">
-                    <img src= "<%= bsidet.image %>" alt="<%= bsidet.title %> 's image" class="img-fluid">
+                  
+                    <img src= "<%= besidet.image %>" alt="<%= besidet.title %> 's image" class="img-fluid">
                     <span class="overlay">
                         <span class="product-details">
-                          View Details
+                          <%= link_to "View Details", besidet, class: "linky" %>
                         </span>
                     </span>
-                  </a>
+                 
                 </div>
                 <div class="product-discription py-3">
-                <h4 class="text-center"><%= bsidet.title %></h4>
-                <p class="text-center"><small><%= bsidet.sdescription %></small></p>
+                <h4 class="text-center"><%= besidet.title %></h4>
+                <p class="text-center"><small><%= besidet.sdescription %></small></p>
                 <span class="product-price">
-                <p class="text-center d-inline">Price: <%= bsidet.price %></p><i class="fa fa-heart d-inline" aria-hidden="true"></i>
+                <p class="text-center d-inline">Price: <%= besidet.price %></p><i class="fa fa-heart d-inline" aria-hidden="true"></i>
                 </span>
                 </div>
                 <div class="product-btn py-2 text-center">
-                <a href="#" class="btn btn-lg btn-outline-secondary" role="button" aria-pressed="true">ADD TO CART</a>
+                <a href="#" class="btn btn-lg" role="button" aria-pressed="true">ADD TO CART</a>
                 </div>
               </div>
           </div>

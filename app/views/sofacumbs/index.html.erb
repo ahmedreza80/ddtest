@@ -55,7 +55,7 @@
 
     <div class="container-fluid bg-cover">
       <div class="container product-section-cover">
-        
+
         <div class="row">
 
 
@@ -63,14 +63,14 @@
           <div class="col col-md-4 col-sm-6">
               <div class="product-grid">
                 <div class="image">
-                  <a href="#">
+                 
                     <img src= "<%= sofacumb.image %>" alt="<%= sofacumb.title %> 's image" class="img-fluid">
                     <span class="overlay">
                         <span class="product-details">
-                          View Details
+                          <%= link_to "View Details", sofacumb, class: "linky" %>
                         </span>
                     </span>
-                  </a>
+             
                 </div>
                 <div class="product-discription py-3">
                 <h4 class="text-center"><%= sofacumb.title %></h4>
@@ -80,7 +80,7 @@
                 </span>
                 </div>
                 <div class="product-btn py-2 text-center">
-                <a href="#" class="btn btn-lg btn-outline-secondary" role="button" aria-pressed="true">ADD TO CART</a>
+                <a href="#" class="btn btn-lg " role="button" aria-pressed="true">ADD TO CART</a>
                 </div>
               </div>
           </div>

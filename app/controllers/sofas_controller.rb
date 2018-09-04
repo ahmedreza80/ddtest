@@ -70,6 +70,6 @@ class SofasController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def sofa_params
-      params.require(:sofa).permit(:title, :description, :price, :image, :previewo, :previewt, :previewth, :sdescription, :offerprice, :coupon, :brand, :color, :warrenty, :material, :saving, :off)
+      params.require(:sofa).permit(:title, :description, :price, :image, :previewo, :previewt, :previewth, :sdescription, :offerprice, :coupon, :brand, :color, :warrenty, :material, :saving, :off, :height, :width, :depth, :dimension)
     end
 end

@@ -10,6 +10,7 @@ class SinglebsController < ApplicationController
   # GET /singlebs/1
   # GET /singlebs/1.json
   def show
+    @singlebs = Singleb.all
   end
 
   # GET /singlebs/new
@@ -69,6 +70,6 @@ class SinglebsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def singleb_params
-      params.require(:singleb).permit(:title, :description, :price, :image, :previewo, :previewt, :previewth, :sdescription, :offerprice, :coupon, :brand, :color, :warrenty, :material, :saving, :off)
+      params.require(:singleb).permit(:title, :description, :price, :image, :previewo, :previewt, :previewth, :sdescription, :offerprice, :coupon, :brand, :color, :warrenty, :material, :saving, :off, :height, :width, :depth, :dimension)
     end
 end

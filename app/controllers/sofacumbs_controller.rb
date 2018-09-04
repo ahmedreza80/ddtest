@@ -10,6 +10,7 @@ class SofacumbsController < ApplicationController
   # GET /sofacumbs/1
   # GET /sofacumbs/1.json
   def show
+      @sofacumbs = Sofacumb.all
   end
 
   # GET /sofacumbs/new
@@ -69,6 +70,6 @@ class SofacumbsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def sofacumb_params
-      params.require(:sofacumb).permit(:title, :description, :price, :image, :previewo, :previewt, :previewth, :sdescription, :offerprice, :coupon, :brand, :color, :warrenty, :material, :saving, :off)
+      params.require(:sofacumb).permit(:title, :description, :price, :image, :previewo, :previewt, :previewth, :sdescription, :offerprice, :coupon, :brand, :color, :warrenty, :material, :saving, :off, :height, :width, :depth, :dimension)
     end
 end

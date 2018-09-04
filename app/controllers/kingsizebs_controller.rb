@@ -10,6 +10,7 @@ class KingsizebsController < ApplicationController
   # GET /kingsizebs/1
   # GET /kingsizebs/1.json
   def show
+    @kingsizebs = Kingsizeb.all
   end
 
   # GET /kingsizebs/new
@@ -69,6 +70,6 @@ class KingsizebsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def kingsizeb_params
-      params.require(:kingsizeb).permit(:title, :description, :price, :image, :previewo, :previewt, :previewth, :sdescription, :offerprice, :coupon, :brand, :color, :warrenty, :material, :saving, :off)
+      params.require(:kingsizeb).permit(:title, :description, :price, :image, :previewo, :previewt, :previewth, :sdescription, :offerprice, :coupon, :brand, :color, :warrenty, :material, :saving, :off, :height, :width, :depth, :dimension)
     end
 end

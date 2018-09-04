@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
 
 
+  resources :interiors
+  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   devise_for :users
   resources :kidswardrobs
   resources :kidstudyts
@@ -35,7 +37,19 @@ Rails.application.routes.draw do
   resources :benches
   resources :chairs
   resources :sofas
+  get '/cart', to: 'order_items#index'
+  resources :order_items, path: '/cart/items'
+  get '/cart/checkout', to: 'orders#new', as: :checkout
+  patch '/cart/checkout', to: 'orders#create'
+  get 'search', to: 'search#search'
   get "welcome/sofas"
+  get "welcome/about"
+  get "welcome/contact"
+  get "welcome/privacy"
+  get "welcome/faq"
+  get "welcome/delivery"
+  get "welcome/return"
+
   root 'welcome#index'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html

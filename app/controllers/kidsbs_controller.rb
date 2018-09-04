@@ -10,6 +10,7 @@ class KidsbsController < ApplicationController
   # GET /kidsbs/1
   # GET /kidsbs/1.json
   def show
+     @kidsbs = Kidsb.all
   end
 
   # GET /kidsbs/new
@@ -69,6 +70,6 @@ class KidsbsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def kidsb_params
-      params.require(:kidsb).permit(:title, :description, :price, :image, :previewo, :previewt, :previewth, :sdescription, :offerprice, :coupon, :brand, :color, :warrenty, :material, :saving, :off)
+      params.require(:kidsb).permit(:title, :description, :price, :image, :previewo, :previewt, :previewth, :sdescription, :offerprice, :coupon, :brand, :color, :warrenty, :material, :saving, :off, :height, :width, :depth, :dimension)
     end
 end

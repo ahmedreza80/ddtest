@@ -10,6 +10,7 @@ class DivanbsController < ApplicationController
   # GET /divanbs/1
   # GET /divanbs/1.json
   def show
+    @divanbs = Divanb.all
   end
 
   # GET /divanbs/new
@@ -69,6 +70,6 @@ class DivanbsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def divanb_params
-      params.require(:divanb).permit(:title, :description, :price, :image, :previewo, :previewt, :previewth, :sdescription, :offerprice, :coupon, :brand, :color, :warrenty, :material, :saving, :off)
+      params.require(:divanb).permit(:title, :description, :price, :image, :previewo, :previewt, :previewth, :sdescription, :offerprice, :coupon, :brand, :color, :warrenty, :material, :saving, :off, :height, :width, :depth, :dimension)
     end
 end

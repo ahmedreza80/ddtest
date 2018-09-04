@@ -10,6 +10,7 @@ class QueensizebsController < ApplicationController
   # GET /queensizebs/1
   # GET /queensizebs/1.json
   def show
+    @queensizebs = Queensizeb.all
   end
 
   # GET /queensizebs/new
@@ -69,6 +70,6 @@ class QueensizebsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def queensizeb_params
-      params.require(:queensizeb).permit(:title, :description, :price, :image, :previewo, :previewt, :previewth, :sdescription, :offerprice, :coupon, :brand, :color, :warrenty, :material, :saving, :off)
+      params.require(:queensizeb).permit(:title, :description, :price, :image, :previewo, :previewt, :previewth, :sdescription, :offerprice, :coupon, :brand, :color, :warrenty, :material, :saving, :off, :height, :width, :depth, :dimension)
     end
 end

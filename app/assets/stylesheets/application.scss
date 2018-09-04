@@ -12,3 +12,17 @@
  *
  */
  @import "bootstrap";
+
+.linky{
+  color: #fff;
+  font-size: 20px;
+}
+
+.linky:hover {
+    color: yellow;
+}
+
+/* selected link */
+.linky:active {
+    color: #fff;
+}

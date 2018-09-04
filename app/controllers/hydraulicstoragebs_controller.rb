@@ -10,6 +10,7 @@ class HydraulicstoragebsController < ApplicationController
   # GET /hydraulicstoragebs/1
   # GET /hydraulicstoragebs/1.json
   def show
+    @hydraulicstoragebs = Hydraulicstorageb.all
   end
 
   # GET /hydraulicstoragebs/new
@@ -69,6 +70,6 @@ class HydraulicstoragebsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def hydraulicstorageb_params
-      params.require(:hydraulicstorageb).permit(:title, :description, :price, :image, :previewo, :previewt, :previewth, :sdescription, :offerprice, :coupon, :brand, :color, :warrenty, :material, :saving, :off)
+      params.require(:hydraulicstorageb).permit(:title, :description, :price, :image, :previewo, :previewt, :previewth, :sdescription, :offerprice, :coupon, :brand, :color, :warrenty, :material, :saving, :off, :height, :width, :depth, :dimension)
     end
 end

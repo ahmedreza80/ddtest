@@ -1,0 +1,56 @@
+
+
+h3.head-title{
+  font-size: 32px;
+  font-weight: 400;
+  padding: 5px;
+}
+
+.login-content p{
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.login-content p a{
+  color: #FF8C00;
+  text-decoration: none;
+}
+
+.login-content .form-group{
+  margin: 5px;
+}
+
+.login-content .form-group input.form-control{
+  background-color: transparent;
+  border-radius: 0px;
+  border: 1px solid #ccc;
+  height: 38px;
+  width: 260px;
+  color: #000;
+  margin-top: 0px;
+  box-shadow: none;
+}
+
+.login-content form .btn{
+  background: #FF8C00;
+  color: #fff;
+  font-size: 15px;
+  margin: 5px 5px 0;
+  padding: 7px 20px;
+  text-transform: uppercase;
+  float: left;
+}
+
+.login-content form a{
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 300;
+  float: right;
+  margin: 20px 0 0 20px;
+  text-decoration: none;
+  color: #FF8C00;
+}
+
+.login-content .form-check{
+  margin-left: 5px;
+}

@@ -10,6 +10,7 @@ class LshapedcornersofasController < ApplicationController
   # GET /lshapedcornersofas/1
   # GET /lshapedcornersofas/1.json
   def show
+    @lshapedcornersofas = Lshapedcornersofa.all
   end
 
   # GET /lshapedcornersofas/new
@@ -69,6 +70,6 @@ class LshapedcornersofasController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def lshapedcornersofa_params
-      params.require(:lshapedcornersofa).permit(:title, :description, :price, :image, :previewo, :previewt, :previewth, :sdescription, :offerprice, :coupon, :brand, :color, :warrenty, :material, :saving, :off)
+      params.require(:lshapedcornersofa).permit(:title, :description, :price, :image, :previewo, :previewt, :previewth, :sdescription, :offerprice, :coupon, :brand, :color, :warrenty, :material, :saving, :off, :height, :width, :depth, :dimension)
     end
 end

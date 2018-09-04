@@ -10,6 +10,7 @@ class ThreeseatersofasController < ApplicationController
   # GET /threeseatersofas/1
   # GET /threeseatersofas/1.json
   def show
+     @threeseatersofas = Threeseatersofa.all
   end
 
   # GET /threeseatersofas/new
@@ -69,6 +70,6 @@ class ThreeseatersofasController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def threeseatersofa_params
-      params.require(:threeseatersofa).permit(:title, :description, :price, :image, :previewo, :previewt, :previewth, :sdescription, :offerprice, :coupon, :brand, :color, :warrenty, :material, :saving, :off)
+      params.require(:threeseatersofa).permit(:title, :description, :price, :image, :previewo, :previewt, :previewth, :sdescription, :offerprice, :coupon, :brand, :color, :warrenty, :material, :saving, :off, :height, :width, :depth, :dimension)
     end
 end

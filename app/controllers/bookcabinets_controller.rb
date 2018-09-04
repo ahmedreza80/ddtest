@@ -10,6 +10,7 @@ class BookcabinetsController < ApplicationController
   # GET /bookcabinets/1
   # GET /bookcabinets/1.json
   def show
+    @bookcabinets = Bookcabinet.all
   end
 
   # GET /bookcabinets/new
@@ -69,6 +70,6 @@ class BookcabinetsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def bookcabinet_params
-      params.require(:bookcabinet).permit(:title, :description, :price, :image, :previewo, :previewt, :previewth, :sdescription, :offerprice, :coupon, :brand, :color, :warrenty, :material, :saving, :off)
+      params.require(:bookcabinet).permit(:title, :description, :price, :image, :previewo, :previewt, :previewth, :sdescription, :offerprice, :coupon, :brand, :color, :warrenty, :material, :saving, :off, :height, :width, :depth, :dimension)
     end
 end

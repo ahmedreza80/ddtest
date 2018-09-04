@@ -10,6 +10,7 @@ class FabricsofasetsController < ApplicationController
   # GET /fabricsofasets/1
   # GET /fabricsofasets/1.json
   def show
+    @fabricsofasets = Fabricsofaset.all
   end
 
   # GET /fabricsofasets/new
@@ -69,6 +70,6 @@ class FabricsofasetsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def fabricsofaset_params
-      params.require(:fabricsofaset).permit(:title, :description, :price, :image, :previewo, :previewt, :previewth, :sdescription, :offerprice, :coupon, :brand, :color, :warrenty, :material, :saving, :off)
+      params.require(:fabricsofaset).permit(:title, :description, :price, :image, :previewo, :previewt, :previewth, :sdescription, :offerprice, :coupon, :brand, :color, :warrenty, :material, :saving, :off, :height, :width, :depth, :dimension)
     end
 end

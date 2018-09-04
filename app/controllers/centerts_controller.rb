@@ -10,6 +10,7 @@ class CentertsController < ApplicationController
   # GET /centerts/1
   # GET /centerts/1.json
   def show
+    @centerts = Centert.all
   end
 
   # GET /centerts/new
@@ -69,6 +70,6 @@ class CentertsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def centert_params
-      params.require(:centert).permit(:title, :description, :price, :image, :previewo, :previewt, :previewth, :sdescription, :offerprice, :coupon, :brand, :color, :warrenty, :material, :saving, :off)
+      params.require(:centert).permit(:title, :description, :price, :image, :previewo, :previewt, :previewth, :sdescription, :offerprice, :coupon, :brand, :color, :warrenty, :material, :saving, :off, :height, :width, :depth, :dimension)
     end
 end

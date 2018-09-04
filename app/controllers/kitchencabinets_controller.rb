@@ -10,6 +10,7 @@ class KitchencabinetsController < ApplicationController
   # GET /kitchencabinets/1
   # GET /kitchencabinets/1.json
   def show
+    @kitchencabinets = Kitchencabinet.all
   end
 
   # GET /kitchencabinets/new
@@ -69,6 +70,6 @@ class KitchencabinetsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def kitchencabinet_params
-      params.require(:kitchencabinet).permit(:title, :description, :price, :image, :previewo, :previewt, :previewth, :sdescription, :offerprice, :coupon, :brand, :color, :warrenty, :material, :saving, :off)
+      params.require(:kitchencabinet).permit(:title, :description, :price, :image, :previewo, :previewt, :previewth, :sdescription, :offerprice, :coupon, :brand, :color, :warrenty, :material, :saving, :off, :height, :width, :depth, :dimension)
     end
 end

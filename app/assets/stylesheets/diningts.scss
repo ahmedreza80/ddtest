@@ -4,13 +4,34 @@
 
 
 
+/*
+
+gold:   #FFD700;
+orange: #FFA500;
+goldenrod:  #DAA520;
+dark-orange:  #FF8C00;
+
+
+
+*/
+
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,700');
+
+body{
+
+    font-family: 'Raleway';
+    font-weight: 400;
+}
+
+
 /* --------- Living-section --------- */
 
 
 
 .title-border{
   width: 300px;
-  border: 2px solid #ccc;
+  border: 2px solid #FF8C00;
 }
 
 .product-section-cover{
@@ -90,12 +111,6 @@
 /* --------- Product View Showcase --------- */
 
 
-.title-border{
-  width: 300px;
-  border: 2px solid #ccc;
-}
-
-
 .left-sidebar{
   position: sticky;
   top: 10px;
@@ -145,45 +160,53 @@ padding: 7px;
   border-right: 2px solid #ccc;
 }
 
+.btn {
+  color: #000;
+  background-color: #FFA500;
+  transition: all .3s;
+}
+.btn:hover{
+  background-color: #FF8C00;
+  color: #fff;
+}
+
 
 .button button.btn{
+  margin-top: 5px;
+  margin-bottom: 5px;
   margin-right: 5px;
-  background-color: #FF8C00;
 }
 
 
 
-button .fa{
+
+.button button .fa{
   font-size: 24px;
 }
 
-button p{
+.button button p{
   margin-left: 10px;
 }
 
 .brand, .Dimensions, .colour, .Warranty, .Room, .Height, .width,
-.Depth{
+.Depth {
   margin-top: -5px;
   margin-bottom: -5px;
   font-size: 18px;
-  font-weight: lighter;
+  font-weight: 100 !important;
   line-height: 20px;
+
 }
 
-.Overview p{
+.Overview p small{
   font-size: 18px;
-  font-weight: lighter;
+  font-weight: 100 !important;
   line-height: 20px;
 }
 
 .card{
   margin-bottom: 5px;
   background-color: #f9f9f9;
-}
-
-.card .btn{
-  background-color: #ccc;
-  color: #000;
 }
 
 /* Related */

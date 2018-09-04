@@ -10,6 +10,7 @@ class UpholsteredbsController < ApplicationController
   # GET /upholsteredbs/1
   # GET /upholsteredbs/1.json
   def show
+    @upholsteredbs = Upholsteredb.all
   end
 
   # GET /upholsteredbs/new
@@ -69,6 +70,6 @@ class UpholsteredbsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def upholsteredb_params
-      params.require(:upholsteredb).permit(:title, :description, :price, :image, :previewo, :previewt, :previewth, :sdescription, :offerprice, :coupon, :brand, :color, :warrenty, :material, :saving, :off)
+      params.require(:upholsteredb).permit(:title, :description, :price, :image, :previewo, :previewt, :previewth, :sdescription, :offerprice, :coupon, :brand, :color, :warrenty, :material, :saving, :off, :height, :width, :depth, :dimension)
     end
 end

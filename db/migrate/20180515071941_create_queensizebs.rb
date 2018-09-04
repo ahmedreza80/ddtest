@@ -17,6 +17,10 @@ class CreateQueensizebs < ActiveRecord::Migration[5.1]
       t.string :material
       t.string :saving
       t.string :off
+      t.string :height
+      t.string :width
+      t.string :depth
+      t.string :dimension
 
       t.timestamps
     end
