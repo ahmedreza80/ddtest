@@ -64,5 +64,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 group :production do # Added postgres and made it production only.
 gem 'rails_12factor'
+gem 'bonsai-elasticsearch-rails'
 gem 'pg', '~> 0.20.0'
 end
