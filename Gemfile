@@ -22,8 +22,6 @@ gem 'jquery-rails'
 gem 'carrierwave', '~> 0.10.0'
 gem 'mini_magick', '~> 4.3'
 gem 'devise'
-gem 'elasticsearch-model', '~> 0.1.8'
-gem 'elasticsearch-rails', '~> 0.1.8'
 
 
 # See https://github.com/rails/execjs#readme for more supported runtimes
@@ -64,6 +62,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 group :production do # Added postgres and made it production only.
 gem 'rails_12factor'
-gem 'bonsai-elasticsearch-rails'
+
 gem 'pg', '~> 0.20.0'
 end
