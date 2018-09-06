@@ -21,3 +21,27 @@ hr {
 
 }
 
+
+.section-main .fa {
+    margin: 10px;
+    font-size: 40px;
+}
+
+.fa-whatsapp {
+    color: #25D366;
+    transition: all 0.2s;
+}
+
+.fa-whatsapp:hover {
+    color: rgb(57, 192, 106);
+}
+
+.fa-instagram {
+    color: #fb3958;
+    transition: all 0.2s;
+}
+
+.fa-instagram:hover {
+    color: #f8183d;
+}
+
