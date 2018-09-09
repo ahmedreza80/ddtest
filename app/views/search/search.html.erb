@@ -17,3 +17,14 @@
     </li>
   <% end %>
 </ul>
+
+
+<ul>
+  <% @benches.each do |bench| %>
+    <li>
+      <h3>
+        <%= link_to bench.title, controller: "benches", action: "show", id: bench._id%>
+      </h3>
+    </li>
+  <% end %>
+</ul>
