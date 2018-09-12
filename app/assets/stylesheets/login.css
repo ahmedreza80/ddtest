@@ -1,5 +1,14 @@
 
 
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,700');
+
+body{
+
+    font-family: 'Raleway';
+    font-weight: 400;
+}
+
+
 h3.head-title{
   font-size: 32px;
   font-weight: 400;
@@ -20,15 +29,21 @@ h3.head-title{
   margin: 5px;
 }
 
-.login-content .form-group input.form-control{
+.login-content .form-group .form-control{
   background-color: transparent;
   border-radius: 0px;
-  border: 1px solid #ccc;
-  height: 38px;
-  width: 260px;
+  border: transparent;
+  height: 45px;
+  width: 360px;
   color: #000;
-  margin-top: 0px;
+  margin-top: 5px;
   box-shadow: none;
+}
+
+.login-content .form-group .form-control input{
+  width: 100%;
+  height: 100%;
+  
 }
 
 .login-content form .btn{

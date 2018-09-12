@@ -17,7 +17,7 @@
         <div class="col col-md-8 contact d-flex justify-content-end">
           <div class="login d-inline">
             <% if user_signed_in? %>
-          Hi, Guest
+          Hi, <%= current_user.full_name %>
         <% else %>
             <a href="/users/sign_in">SignIn </a>
             /
@@ -26,6 +26,7 @@
           <% end %>
           <i class="fa fa-whatsapp d-inline" aria-hidden="true"></i>
           <span class="d-inline">9748 444 800 | <a href="mailto:info@dennydots.com.com">info@dennydots.com</a></span>
+          <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
         </div>
       </div>
       </div>
@@ -476,4 +477,6 @@ $(window).scroll(function(){
   }
 });
   </script>
+
+  
 </body>

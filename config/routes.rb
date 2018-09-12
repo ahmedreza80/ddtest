@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   resources :interiors
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
-  devise_for :users
+  devise_for :users, :controllers => { :registrations => "acme/registrations"}
   resources :kidswardrobs
   resources :kidstudyts
   resources :dressingts
@@ -37,6 +37,7 @@ Rails.application.routes.draw do
   resources :benches
   resources :chairs
   resources :sofas
+
   get '/cart', to: 'order_items#index'
   resources :order_items, path: '/cart/items'
   get '/cart/checkout', to: 'orders#new', as: :checkout

@@ -804,6 +804,10 @@ ActiveRecord::Schema.define(version: 20180902183159) do
     t.datetime "last_sign_in_at"
     t.string "current_sign_in_ip"
     t.string "last_sign_in_ip"
+    t.string "full_name"
+    t.string "mobile_number"
+    t.string "verification_code"
+    t.boolean "is_verified"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["email"], name: "index_users_on_email", unique: true

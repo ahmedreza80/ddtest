@@ -24,8 +24,13 @@ gem 'mini_magick', '~> 4.3'
 gem 'devise'
 gem 'elasticsearch-model'
 gem 'elasticsearch-rails'
-
-
+gem 'twilio-ruby', '~> 4.0.0'
+gem 'autoprefixer-rails', '~> 6.3'
+gem 'phonelib'
+gem 'fog', '~> 1.40'
+gem 'fog-aws', '~> 0.7.6'
+gem 'net-ssh'
+gem 'sdoc', '~> 0.4.0', group: :doc
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
@@ -64,7 +69,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 group :production do # Added postgres and made it production only.
 gem 'rails_12factor'
-
 gem 'pg', '~> 0.20.0'
+
 gem 'bonsai-elasticsearch-rails', '~> 6'
 end
