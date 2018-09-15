@@ -274,8 +274,7 @@
 
     <div class="col col-md-4 col-sm-12 Overview vl">
         <h2 class="h3">Overview</h2>
-          <p class="text-justify"><small><%= @sidet.description %></small></p>
-
+          <p class="text-justify"><%= simple_format h(@sidet.description) %></p>
     </div>
       <!-- Question -->
     <div class="d-none d-md-block col col-md-4">
