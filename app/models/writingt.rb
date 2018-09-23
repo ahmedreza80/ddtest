@@ -1,4 +1,3 @@
-require 'elasticsearch/model'
 
 
 class Writingt < ApplicationRecord
@@ -7,9 +6,8 @@ class Writingt < ApplicationRecord
 	mount_uploader :previewt, PreviewtUploader
 	mount_uploader :previewth, PreviewthUploader
 	validates :description, presence: true, length: { maximum: 600 }
-	include Elasticsearch::Model
-  include Elasticsearch::Model::Callbacks
+
 	
 end
-Writingt.import force: true
+
 
