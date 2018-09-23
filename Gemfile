@@ -22,7 +22,8 @@ gem 'jquery-rails'
 gem 'carrierwave', '~> 0.10.0'
 gem 'mini_magick', '~> 4.3'
 gem 'devise'
-
+gem 'elasticsearch-model'
+gem 'elasticsearch-rails'
 gem 'twilio-ruby', '~> 4.0.0'
 gem 'autoprefixer-rails', '~> 6.3'
 gem 'phonelib'
@@ -70,4 +71,5 @@ group :production do # Added postgres and made it production only.
 gem 'rails_12factor'
 gem 'pg', '~> 0.20.0'
 
+gem 'bonsai-elasticsearch-rails', '~> 6'
 end
