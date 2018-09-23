@@ -1,4 +1,4 @@
-require 'elasticsearch/model'
+
 
 class Chair < ApplicationRecord
 	mount_uploader :image, ImageUploader
@@ -7,8 +7,7 @@ class Chair < ApplicationRecord
 	mount_uploader :previewth, PreviewthUploader
 	validates :description, presence: true, length: { maximum: 600 }
 	 
-	include Elasticsearch::Model
-  include Elasticsearch::Model::Callbacks
+
 
 end
-Chair.import force: true
+

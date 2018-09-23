@@ -1,4 +1,4 @@
-require 'elasticsearch/model'
+
 
 class Sidet < ApplicationRecord
 	mount_uploader :image, ImageUploader
@@ -6,9 +6,7 @@ class Sidet < ApplicationRecord
 	mount_uploader :previewt, PreviewtUploader
 	mount_uploader :previewth, PreviewthUploader
 	validates :description, presence: true, length: { maximum: 600 }
-	include Elasticsearch::Model
-  include Elasticsearch::Model::Callbacks
+
 
 end
-Sidet.import force: true
 

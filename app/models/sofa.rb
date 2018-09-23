@@ -1,4 +1,3 @@
-require 'elasticsearch/model'
 
 class Sofa < ApplicationRecord
 	mount_uploader :image, ImageUploader
@@ -6,10 +5,8 @@ class Sofa < ApplicationRecord
 	mount_uploader :previewt, PreviewtUploader
 	mount_uploader :previewth, PreviewthUploader
 	validates :description, presence: true, length: { maximum: 600 }
-	include Elasticsearch::Model
-  include Elasticsearch::Model::Callbacks
+
 
 end
-Sofa.import force: true
 
 

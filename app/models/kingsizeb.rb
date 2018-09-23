@@ -1,4 +1,4 @@
-require 'elasticsearch/model'
+
 
 class Kingsizeb < ApplicationRecord
 	mount_uploader :image, ImageUploader
@@ -6,10 +6,9 @@ class Kingsizeb < ApplicationRecord
 	mount_uploader :previewt, PreviewtUploader
 	mount_uploader :previewth, PreviewthUploader
 	validates :description, presence: true, length: { maximum: 600 }
-	include Elasticsearch::Model
-  include Elasticsearch::Model::Callbacks
+	
 	
 end
-Kingsizeb.import force: true
+
 
 

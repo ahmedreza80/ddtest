@@ -1,4 +1,4 @@
-require 'elasticsearch/model'
+
 
 class Singleb < ApplicationRecord
 	mount_uploader :image, ImageUploader
@@ -6,8 +6,7 @@ class Singleb < ApplicationRecord
 	mount_uploader :previewt, PreviewtUploader
 	mount_uploader :previewth, PreviewthUploader
 	validates :description, presence: true, length: { maximum: 600 }
-	include Elasticsearch::Model
-  include Elasticsearch::Model::Callbacks
+
 
 end
-Singleb.import force: true
+
