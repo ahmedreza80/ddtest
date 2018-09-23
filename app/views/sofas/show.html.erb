@@ -102,11 +102,16 @@
             <hr>
             <!--- btn cart customize -->
             <div class="button my-2">
-              <button type="button" class="btn cart"><i class="d-inline fa fa-cart-arrow-down" aria-hidden="true"></i><p class="d-inline">Add To Cart</p></button>
-              <button type="button" class="btn buy"><i class=" d-inline fa fa-arrow-right" aria-hidden="true"></i><p class="d-inline">Buy Now</p></button>
+              <%= form_tag order_items_path do %>
+        <%= hidden_field_tag :sofa_id, @sofa.id %>
+        <%= number_field_tag :quantity, 1 %>
+        
+        <button type="submit" class="btn cart"><i class="d-inline fa fa-cart-arrow-down" aria-hidden="true"></i><p class="d-inline">Add To Cart</p></button>
+      <% end %>
+              
 
 
-              <button type="button" class="btn" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-wrench d-inline" aria-hidden="true"></i><p class="d-inline">Customize It</p></button>
+              <button type="button" class="btncust" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-wrench d-inline" aria-hidden="true"></i><p class="d-inline">Customize It</p></button>
 
               <!-- Modal -->
       <div class="modal fade bd-example-modal-lg" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">

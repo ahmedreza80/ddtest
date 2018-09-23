@@ -33,6 +33,7 @@ class ShoppingCart
     end
   end
 
+
   def remove_item(id:)
     ActiveRecord::Base.transaction do
       order.items.destroy(id)
